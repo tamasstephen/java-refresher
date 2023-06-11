@@ -28,11 +28,4 @@ public class Board {
         return this.board.get(row).get(column);
     }
 
-    public boolean isFieldEmpty(int row, int column) {
-        if (this.board.get(row).get(column).getMarker() == Marker.EMPTY) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

@@ -24,16 +24,4 @@ public class BoardTests {
         assert (!board.markField(0, 0, Marker.O));
     }
 
-    @Test
-    public void isFieldEmpty_TheFieldIsEmpty_ReturnsTrue() {
-        assert (board.isFieldEmpty(0, 0));
-    }
-
-    @Test
-    public void isFieldEmpty_TheFieldIsOccupied_ReturnsFalse() {
-        assert (board.markField(0, 0, Marker.X));
-
-        assert (!board.isFieldEmpty(0, 0));
-    }
-
 }
